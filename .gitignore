@@ -1,0 +1,10 @@
+*/
+*.doc
+*.exe
+*.xls
+*.html
+.bash_history
+.gitk
+_viminfo
+.Rhistory
+.gitk-new
