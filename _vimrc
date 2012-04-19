@@ -42,6 +42,9 @@ map <Right> ""
 " Macro for converting an HTML combobox into a SAS format
 let @f='gg0i€kuproc format;value€ýc€ýb TYPE_NEW_VALUE_NAME_HERE€ýc€ýb:%s/<option value=€ýc€ýb"//g:%s/">/ = "/g:%s/€ýc€ýb<\/option>/"/g:%s/<option selected="selected" value="//g€kb€kb:%s/&lt;//g:%s/&gt;//gGGi;run;'
 
+let @s="o#€ü Strings ain't factorsoptions(stringsAsFactors = FALSE)q€kb"
+
+
 
 
 " MyDiff function (not sure what this is)
