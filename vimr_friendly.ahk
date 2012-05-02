@@ -13,4 +13,5 @@ WinMove, , , 0, 0, DEFAULT, 930
 Send \rf
 WinWait R Console
 WinMove, , , 669, 0, 611, 930
+WinActivate, .*\.r.*GVIM.*, , 10
 return
