@@ -1,6 +1,4 @@
 
-list(default = function(x){
-                   file.path("~", "Rpackages", x, x)
-               }
-
+list(
+     "tbdiag" = "I:/USERS/MParker/Rpackages/tbdiag/tbdiag"
 )
