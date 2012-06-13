@@ -21,6 +21,7 @@ set incsearch		" do incremental searching
 syntax enable
 filetype plugin on
 filetype indent on
+let vimrplugin_r_path = "C:\\Program Files\\R\\R-2.15.0\\bin\\i386"
 let vimrplugin_r_args = "--sdi --no-save --no-restore-data --quiet"
 let vimrplugin_vimpager = "no"
 

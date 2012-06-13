@@ -9,3 +9,9 @@
   local({r <- getOption("repos")
         r["CRAN"] <- "http://streaming.stat.iastate.edu/CRAN/"
         options(repos=r)})
+
+
+# If in an interactive mode, load up vimcom for the Vim plugin
+if(interactive()){
+    library(vimcom)
+}    
