@@ -5,4 +5,4 @@
 	excludesfile = ~/.gitignore_global
 [alias]
     # I use git log --oneline a lot, and it's a bit much to type...
-    lol = !git log --oneline --decorate --graph
+    lg = !git log --oneline --decorate --graph
