@@ -4,5 +4,9 @@
 [core]
 	excludesfile = ~/.gitignore_global
 [alias]
+    # I'm generally opposed to extensive aliasing and fancy custom commands,
+    # but these are a few that are gonna save me from RSI
     # I use git log --oneline a lot, and it's a bit much to type...
-    lg = !git log --oneline --decorate --graph
+    l = !git log --oneline --decorate --graph
+    # I use git status a lot, too.
+    s = !git status
