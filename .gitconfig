@@ -2,4 +2,4 @@
 	name = Matt Parker
 	email = mattmparker@gmail.com
 [core]
-	excludesfile = i:/USERS/MParker/.gitignore_global
+	excludesfile = ~/.gitignore_global
