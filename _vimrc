@@ -1,12 +1,6 @@
 " Set to not-vi-compatible
 set nocompatible
 
-" Make Vim behave more like Windows (I probably don't actually want this)
-source $VIMRUNTIME/mswin.vim
-
-" Some additional Windows-specific items for the mouse (!)
-behave mswin
-
 set viminfo+=n$VIM
 
 " Set the colorscheme - desert fo life
