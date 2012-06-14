@@ -2,11 +2,21 @@
 	name = Matt Parker
 	email = mattmparker@gmail.com
 [core]
+    # A global .gitignore
 	excludesfile = ~/.gitignore_global
+
+    # Line wrapping for diffs
+    pager =  less -r
 [alias]
     # I'm generally opposed to extensive aliasing and fancy custom commands,
     # but these are a few that are gonna save me from RSI
+    
     # I use git log --oneline a lot, and it's a bit much to type...
     l = !git log --oneline --decorate --graph
+
     # I use git status a lot, too.
     s = !git status
+
+    # And diff with automatically colored words is just awesome
+    d = !git diff --color-words
+
