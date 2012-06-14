@@ -77,4 +77,7 @@ endfunction
 
 
 " Load any local overrides
-:source <sfile>:h/local.vimrc
+let localvimrc = expand('<sfile>:p:h') . '/local.vimrc'
+if filereadable(localvimrc)
+    exe 'source' localvimrc
+endif
