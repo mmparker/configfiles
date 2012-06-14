@@ -58,6 +58,8 @@ let @f='gg0i€kuproc format;value€ýc€ýb TYPE_NEW_VALUE_NAME_HERE€ýc€ýb:%s/<opt
 let @s="o#€ü Strings ain't factorsoptions(stringsAsFactors = FALSE)q€kb"
 
 
+" When working on an R-markdown file, insert a code chunk
+let @i='i```{r chunkname}```kkkllll'
 
 
 " MyDiff function (not sure what this is)
