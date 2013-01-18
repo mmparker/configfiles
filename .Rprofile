@@ -16,6 +16,6 @@
 
 
 # If in an interactive mode, load up vimcom for the Vim plugin
-if(interactive()){
-    library(vimcom)
-}    
+# if(interactive()){
+#     library(vimcom)
+# }    
