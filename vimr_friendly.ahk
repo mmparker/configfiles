@@ -7,11 +7,12 @@ Capslock::Esc
 ; Need to make this resolution-independent somehow...
 #a::
 SetTitleMatchMode RegEx
+SysGet, Mon1, MonitorWorkArea, 1
 WinWait, .*\.r.*GVIM.*, , 10
 WinMove, 0, 0
-WinMove, , , 0, 0, DEFAULT, 930
+WinMove, , , 0, 0, DEFAULT, %Mon1Bottom%
 Send \rf
 WinWait R Console
-WinMove, , , 669, 0, 611, 930
+WinMove, , , 676, 0, 611, %Mon1Bottom%
 WinActivate, .*\.r.*GVIM.*, , 10
 return
