@@ -20,3 +20,5 @@
     # And diff with automatically colored words is just awesome
     d = !git diff --color-words
 
+[push]
+	default = simple
