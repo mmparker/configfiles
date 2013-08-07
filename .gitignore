@@ -1,5 +1,4 @@
-*/
-*.doc
+*/ *.doc
 *.exe
 *.xls
 *.html
@@ -10,3 +9,8 @@ _viminfo
 .gitk-new
 local.vimrc
 .lesshst
+*.LOG*
+*.DAT*
+*.pol
+*.ini
+*/
