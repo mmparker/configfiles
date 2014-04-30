@@ -17,16 +17,26 @@ set ruler       " show the cursor position all the time
 set showcmd     " display incomplete commands
 set incsearch   " do incremental searching
 
-" Options that let the Vim-R plugin work
+" Vim-R plugin options
 syntax enable
 filetype plugin on
 filetype indent on
 
-" Options that I like for Vim-R
 " Quiet startup, no save or restoring workspace dialogs
 let vimrplugin_r_args = "--sdi --no-save --no-restore-data --quiet"
+
 " No using Vim to display help pages
 let vimrplugin_vimpager = "no"
+
+" Lines added by the Vim-R-plugin command :RpluginConfig (2014-Apr-29 17:09):
+" Use Ctrl+Space to do omnicompletion:
+if has("gui_running")
+    inoremap <C-Space> <C-x><C-o>
+else
+    inoremap <Nul> <C-x><C-o>
+endif
+
+let vimrplugin_assign_map = "<M-->"
 
 
 " Switch syntax highlighting on, when the terminal has colors
@@ -94,3 +104,4 @@ let localvimrc = expand('<sfile>:p:h') . '/local.vimrc'
 if filereadable(localvimrc)
     exe 'source' localvimrc
 endif
+
