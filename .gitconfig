@@ -21,4 +21,4 @@
     d = !git diff --color-words
 
 [push]
-	default = simple
+	default = current
