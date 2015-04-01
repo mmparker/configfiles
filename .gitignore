@@ -14,3 +14,9 @@ local.vimrc
 *.pol
 *.ini
 */
+.active-rstudio-document
+.bash_logout
+.bash_profile
+.bashrc
+.emacs
+.viminfo
