@@ -2,8 +2,8 @@
 # Matt's configuration file
 
 # set the default help type
-# options(help_type="text")
-  options(help_type="html")
+ options(help_type="text")
+# options(help_type="html")
 
 
 # Point to a version independent library of packages
