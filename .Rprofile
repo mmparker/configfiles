@@ -15,7 +15,7 @@
         options(repos=r)})
 
 
-# If in an interactive mode, load up vimcom for the Vim plugin
-# if(interactive()){
-#     library(vimcom)
-# }    
+
+# I'm reluctant to do this, but it's a narrow package
+# that comprises most of my use on the server, so...
+library(RevoKnitR)
