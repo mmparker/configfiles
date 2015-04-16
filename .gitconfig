@@ -15,7 +15,7 @@
     l = !git log --oneline --decorate --graph -10
 
     # I use git status a lot, too.
-    s = !git status
+    s = !git status -sb
 
     # And diff with automatically colored words is just awesome
     d = !git diff --color-words
