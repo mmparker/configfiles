@@ -12,10 +12,10 @@
     # but these are a few that are gonna save me from RSI
     
     # I use git log --oneline a lot, and it's a bit much to type...
-    l = !git log --oneline --decorate --graph
+    l = !git log --oneline --decorate --graph -10
 
     # I use git status a lot, too.
-    s = !git status
+    s = !git status -sb
 
     # And diff with automatically colored words is just awesome
     d = !git diff --color-words
