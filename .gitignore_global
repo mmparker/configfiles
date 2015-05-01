@@ -17,6 +17,7 @@ Session.vim
 
 # Databases
 *.mdb
+*.xdf
 
 # Shortcuts
 *.lnk
