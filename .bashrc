@@ -5,6 +5,4 @@ alias R="R --no-save --quiet --no-restore-data"
 alias linkslides="for file in ~/DataCamp/intro_*/*slides.Rmd; do ln -s ~/$file ~/modules/datacamp_slides/src/; done;"
 
 # Quick alias for syncing files from the server.
-alias fetch="rsync -aP --delete coursedev:~/transfer/ ./Desktop/transfer"
-
-alias R="R --no-save --quiet --no-restore-data"
+alias fetch="rsync -aP --delete coursedev:/home/matt.parker/transfer/ ~/Desktop/transfer/. "
