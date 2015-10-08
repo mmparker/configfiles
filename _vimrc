@@ -11,11 +11,14 @@ set expandtab     " Expand tabs into spaces
 set tabstop=4     " Four spaces, to be exact
 set shiftwidth=4  " Width of auto-ident 
 
+" Fix backspace behavior
 set backspace=indent,eol,start
 
+" Other display settings
 set ruler       " show the cursor position all the time
 set showcmd     " display incomplete commands
 set incsearch   " do incremental searching
+set colorcolumn=81 "Highlight the 81st column
 
 " Vim-R plugin options
 syntax enable
