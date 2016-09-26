@@ -8,11 +8,11 @@ Capslock::Esc
 #a::
 SetTitleMatchMode RegEx
 SysGet, Mon1, MonitorWorkArea, 1
-WinWait, .*\.r.*GVIM.*, , 10
+WinWait, .*\.R.*GVIM.*, , 10
 WinMove, 0, 0
 WinMove, , , 0, 0, DEFAULT, %Mon1Bottom%
 Send \rf
 WinWait R Console
-WinMove, , , 676, 0, 611, %Mon1Bottom%
+WinMove, , , 660, 0, 720, %Mon1Bottom%
 WinActivate, .*\.r.*GVIM.*, , 10
 return

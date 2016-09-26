@@ -108,3 +108,8 @@ if filereadable(localvimrc)
     exe 'source' localvimrc
 endif
 
+" vim-plug
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'jalvesaq/Nvim-R'
+call plug#end()
