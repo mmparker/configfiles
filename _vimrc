@@ -26,10 +26,10 @@ filetype plugin on
 filetype indent on
 
 " Quiet startup, no save or restoring workspace dialogs
-let vimrplugin_r_args = "--sdi --no-save --no-restore-data --quiet"
+let R_args = ['--sdi', '--no-save', '--no-restore-data', '--quiet']
 
 " No using Vim to display help pages
-let vimrplugin_vimpager = "no"
+let R_nvimpager = "no"
 
 " Lines added by the Vim-R-plugin command :RpluginConfig (2014-Apr-29 17:09):
 " Use Ctrl+Space to do omnicompletion:
@@ -39,7 +39,15 @@ else
     inoremap <Nul> <C-x><C-o>
 endif
 
-let vimrplugin_assign_map = "<M-->"
+" Arrow <- hotkey
+let R_assign_map = "<M-->"
+
+
+" Pipe hotkey
+inoremap <C-p> <Space>%>% 
+
+
+
 
 
 " Switch syntax highlighting on, when the terminal has colors
