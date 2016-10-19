@@ -16,3 +16,6 @@ local.vimrc
 */
 LauncherFolder
 MyDocuments
+.minttyrc
+*.rds
+.bash_profile
