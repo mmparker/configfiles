@@ -20,3 +20,9 @@ Session.vim
 
 # Shortcuts
 *.lnk
+
+# R stuff
+*.Rdata
+*.rds
+*.Rproj
+*.Rhistory
