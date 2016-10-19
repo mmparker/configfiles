@@ -11,16 +11,7 @@
 
 # set a CRAN mirror
   local({r <- getOption("repos")
-        r["CRAN"] <- "http://streaming.stat.iastate.edu/CRAN/"
+        r["CRAN"] <- "https://streaming.stat.iastate.edu/CRAN/"
         options(repos=r)})
 
 
-
-# I'm reluctant to do this, but it's a narrow package
-# that comprises most of my use on the server, so...
-library(RevoKnitR)
-
-# Shortcut for pulling up the RRE sample data files
-listSampleData <- function(...) {
-    list.files(path = rxGetOption("sampleDataDir"), ...)
-}

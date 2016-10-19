@@ -1,6 +1,6 @@
 [user]
 	name = Matt Parker
-	email = mattmparker@gmail.com
+	email = matt.parker@code42.com
 [core]
     # A global .gitignore
 	excludesfile = ~/.gitignore_global
