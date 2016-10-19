@@ -1,7 +1,7 @@
 " Set to not-vi-compatible
 set nocompatible
 
-set viminfo+=n$VIM
+set viminfo+=n$HOME
 
 " Set the colorscheme - desert fo life
 colorscheme desert
@@ -19,6 +19,13 @@ set ruler       " show the cursor position all the time
 set showcmd     " display incomplete commands
 set incsearch   " do incremental searching
 set colorcolumn=81 "Highlight the 81st column
+
+
+" Use a blinking upright bar cursor in Insert mode, a blinking block in normal
+if &term == 'xterm'
+    let &t_SI = "\<Esc>[5 q"
+    let &t_EI = "\<Esc>[1 q"
+endif
 
 " Vim-R plugin options
 syntax enable
@@ -83,31 +90,16 @@ let @s="o#€ü Strings ain't factorsoptions(stringsAsFactors = FALSE)q€kb
 let @i='i```{r chunkname}```kkkllll'
 
 
-" MyDiff function (not sure what this is)
-set diffexpr=MyDiff()
-function MyDiff()
-  let opt = '-a --binary '
-  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
-  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
-  let arg1 = v:fname_in
-  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
-  let arg2 = v:fname_new
-  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
-  let arg3 = v:fname_out
-  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
-  let eq = ''
-  if $VIMRUNTIME =~ ' '
-    if &sh =~ '\<cmd'
-      let cmd = '""' . $VIMRUNTIME . '\diff"'
-      let eq = '"'
-    else
-      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
-    endif
-  else
-    let cmd = $VIMRUNTIME . '\diff'
-  endif
-  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
-endfunction
+
+
+
+" vim-plug
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'jalvesaq/Nvim-R'
+call plug#end()
+
+
 
 
 " Load any local overrides
@@ -115,9 +107,3 @@ let localvimrc = expand('<sfile>:p:h') . '/local.vimrc'
 if filereadable(localvimrc)
     exe 'source' localvimrc
 endif
-
-" vim-plug
-call plug#begin()
-Plug 'tpope/vim-sensible'
-Plug 'jalvesaq/Nvim-R'
-call plug#end()
