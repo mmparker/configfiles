@@ -19,3 +19,5 @@ MyDocuments
 .minttyrc
 *.rds
 .bash_profile
+*.csv
+*.rds

@@ -3,6 +3,10 @@ set nocompatible
 
 set viminfo+=n$HOME
 
+
+" Set fonts
+set guifont=Consolas:h11:cANSI:qDRAFT
+
 " Set the colorscheme - desert fo life
 colorscheme desert
 

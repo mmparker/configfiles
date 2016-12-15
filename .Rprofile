@@ -6,9 +6,6 @@
   options(help_type="html")
 
 
-# Point to a version independent library of packages
-.libPaths("~/Rlibrary")
-
 # set a CRAN mirror
   local({r <- getOption("repos")
         r["CRAN"] <- "https://streaming.stat.iastate.edu/CRAN/"
