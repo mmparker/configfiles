@@ -8,7 +8,8 @@
 
 # set a CRAN mirror
   local({r <- getOption("repos")
-        r["CRAN"] <- "https://streaming.stat.iastate.edu/CRAN/"
+        r["CRAN"] <- "https://mirror.las.iastate.edu/CRAN/"
         options(repos=r)})
 
-
+# Have dplyr print every column
+options(dplyr.width = Inf)

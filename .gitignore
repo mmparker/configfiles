@@ -21,3 +21,4 @@ MyDocuments
 .bash_profile
 *.csv
 *.rds
+.Rproj.user
